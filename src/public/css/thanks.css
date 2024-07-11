@@ -1,0 +1,55 @@
+.thanks__content {
+    display: inline-block;
+        /* インラインブロック化 */
+    position: relative;
+        /* 親要素               */
+    overflow: hidden;
+        /* はみ出しは非表示     */
+    margin: 0 auto;
+        /* BOXの位置(中央寄せ)  */
+    width: 240px;
+        /* BOXの横幅            */
+    height: 160px;
+        /* BOXの高さ            */
+    background: #FFFFFF;
+}
+
+.thanks__backtext {
+    position: absolute;
+        /* 親要素からの相対位置 */
+    display: inline-block;
+        /* インラインブロック化 */
+    white-space: nowrap;
+        /* 折り返ししない       */
+    font-size: 40pt;
+        /* 背景透かし文字サイズ */
+    font-weight: bold;
+        /* 太字                 */
+    color: rgba(139, 121, 105, 0.05);
+        /* 背景透かし文字色     */
+        /* 中心寄せ＆角度       */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(315deg);
+}
+
+.thanks__heading {
+    color: #8B7969;
+    display: inline-block;
+        /* インラインブロック化 */
+    position: absolute;
+        /* 親要素からの相対位置 */
+    padding: 20px;
+        /* BOX内の余白          */
+    border: 2px solid #999;
+        /* BOXの枠線            */
+    font-size: 18pt;
+        /* 前景文字のサイズ     */
+    font-weight: bold;
+        /* 太字                 */
+    top: 0;
+        /* 親要素にサイズにする */
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
