@@ -35,6 +35,7 @@
 
 .thanks__heading {
     color: #8B7969;
+    margin-bottom: 40px;        text-align: center;
     display: inline-block;
         /* インラインブロック化 */
     position: absolute;
