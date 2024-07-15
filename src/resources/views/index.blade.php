@@ -23,10 +23,10 @@
                 </div>
                 <div class="form__error">
                     @error('first_name')
-                    {{ $message}}
+                    {{ $message }}
                     @enderror
                     @error('last_name')
-                    {{ $message}}
+                    {{ $message }}
                     @enderror
                 </div>
             </div>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="form__error">
                     @error('gender')
-                    {{ $message}}
+                    {{ $message }}
                     @enderror
                 </div>
             </div>
@@ -63,7 +63,7 @@
                 </div>
                 <div class="form__error">
                     @error('email')
-                    {{ $message}}
+                    {{ $message }}
                     @enderror
                 </div>
             </div>
@@ -80,8 +80,14 @@
                     <input type="tel" name="tel_3" placeholder="5678" value="{{ old('tel_3') }}" />
                 </div>
                 <div class="form__error">
-                    @error('tel')
-                    {{ $message}}
+                    @error('tel_1')
+                    {{ $message }}
+                    @enderror
+                    @error('tel_2')
+                    {{ $message }}
+                    @enderror
+                    @error('tel_3')
+                    {{ $message }}
                     @enderror
                 </div>
             </div>
@@ -97,7 +103,7 @@
                 </div>
                 <div class="form__error">
                     @error('address')
-                    {{ $message}}
+                    {{ $message }}
                     @enderror
                 </div>
             </div>
@@ -114,32 +120,18 @@
         </div>
         <div class="form__group">
             <div class="form__group-title">
-                <span class="form__label--item">お問い合わせの種類</span>
-                <span class="form__label--required">※</span>
-            </div>
-            <div class="form__group-content">
-                <div class="form__input--text">
-                    <select name="category" value="{{ old('category') }}" />
-                    <option value="">選択してください</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="form__group">
-            <div class="form__group-title">
                 <span class="form__label--item">お問い合わせ内容</span>
                 <span class="form__label--required">※</span>
             </div>
             <div class="form__group-content">
                 <div class="form__input--textarea">
-                    <textarea name="detail" placeholder="お問い合わせ内容をご記載ください"></textarea>
+                    <textarea name="detail" value="{{ old('detail') }}" placeholder="お問い合わせ内容をご記載ください"></textarea>
                 </div>
             </div>
         </div>
         <div class="form__button">
             <button class="form__button-submit" type="submit">確認画面</button>
-        </div>
-
+        </div>        
     </form>
 </div>
 @endsection

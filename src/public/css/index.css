@@ -46,6 +46,7 @@
 }
 
 .form__input--text input {
+    width: 80px;
     height: 40px;
 }
 

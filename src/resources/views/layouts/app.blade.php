@@ -16,7 +16,7 @@
         <div class="header__inner">
             <a class="header__logo" href="/">
                 FashionablyLate
-            </a>
+            </a>  
         </div>
     </header>
 
