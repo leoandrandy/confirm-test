@@ -18,8 +18,8 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
-                    <input type="text" name="first_name" placeholder="例：山田" value="{{ old('first_name') }}" />
-                    <input type="text" name="last_name" placeholder="例：太郎" value="{{ old('last_name') }}" />
+                    <input type="text" style="width: 40%;" name="first_name" placeholder="例：山田" value="{{ old('first_name') }}" />
+                    <input type="text" style="width: 40%;" name="last_name" placeholder="例：太郎" value="{{ old('last_name') }}" />
                 </div>
                 <div class="form__error">
                     @error('first_name')
@@ -59,7 +59,7 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
-                    <input type="email" name="email" placeholder="例:test@example.com" value="{{ old('email') }}" />
+                    <input type="email" style="width: 250px;" name="email" placeholder="例:test@example.com" value="{{ old('email') }}" />
                 </div>
                 <div class="form__error">
                     @error('email')
@@ -93,7 +93,7 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
-                    <input type="text" name="address" placeholder="例:東京都渋谷区千駄ヶ谷1-2-3" value="{{ old('address') }}" />
+                    <input type="text" style="width: 80%;" name="address" placeholder="例:東京都渋谷区千駄ヶ谷1-2-3" value="{{ old('address') }}" />
                 </div>
                 <div class="form__error">
                     @error('address')
@@ -119,9 +119,16 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
-                    <select name="category" value="{{ old('category') }}" />
+                    <input type="text" name="category" value="{{ old('category') }}" />
+                    <!-- <select name="category" value="{{ old('category') }}" />
                     <option value="">選択してください</option>
-                    </select>
+                    <option value="">商品のお届けについて</option>
+                    <option value="">商品の交換について</option>
+                    <option value="">商品トラブル</option>
+                    <option value="">ショップへのお問い合わせ</option>
+                    <option value="">その他</option>
+                    </select> -->
+
                 </div>
             </div>
         </div>

@@ -30,7 +30,7 @@
         /* 中心寄せ＆角度       */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(315deg);
+    transform: translate(-50%, -50%);
 }
 
 .thanks__heading {
